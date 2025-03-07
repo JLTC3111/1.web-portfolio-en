@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LD portfoilio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <header>
+            <a href="/full-stack-course/">Long Đỗ.</a>
+            <nav>
+                <a target="_blank" href="https://github.com/JLTC3111"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/glory-bacon-815399355/"><i class="fa-brands fa-linkedin"></i><a>
+                    
+            </nav>
+        </header>
+        <main>
+<section>
+    <div class="intro-header"> 
+        <h1>Xin Chào! Tôi là Đỗ Bảo Long</h1>
+        <p>Chuyên viên viết mã, phát triển phần mềm</p>
+    </div>
+    <h5 class="intro-description"> 
+        Chuyên ngành quản lý dự án, viết mã phần mềm theo sở thích. Tôi ở Hà Nội, Việt Nam. 
+        Tôi thích đi bộ, chơi game trên điện thoại, học những kĩ năng mới và xây dựng những ứng dụng hữu ích trên internet. 
+        Là một người yêu thích công nghệ blockchain với ít kinh nghiệm viết mã Solidity trên nền tảng Ethereum. 
+    </h5>
+    <div class="links-container">
+        <i class="fa-solid link-arrow fa-arrow-right"></i>
+        <a href="mailto:Long_do_bao2016@proton.me">
+            Email me
+        </a>
+        <a target="_blank" href="https://github.com/JLTC3111">GitHub</a>
+        <a target="_blank" href="https://www.linkedin.com/in/glory-bacon-815399355">LinkedIn</a>
+    </div>
+    
+    <div id="play-game">
+        <button onclick="playGame()">Muốn Chơi Game???</button>
+    </div>
+    
+    <div style="display: none;" class="color-div">
+        <h4>Chọn Màu</h4>
+        <p style="display: none;">Ahhh vui quá....Bạn Đã Làm Hỏng Trang Web Rồi!</p>
+        <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+        <button style="display: none;" onclick="resetColor()">Làm Lại</button>
+    </div>
+</section>
+
+<section>
+    <h2>Kĩ Năng</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Lĩnh Vực</th>
+                <th>Công Nghệ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>JavaScript</td>
+                <td>ReactJS | React Native | NextJS | NodeJS & ExpressJS | SvelteKit | Qwik</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Data analysis | Django | Data visualization</td>
+            </tr>
+            <tr>
+                <td>Web</td>
+                <td>TailwindCSS | FantaCSS | Firebase | PostgreSQL | CI/CD | GIT | Docker | AWS
+                </td>
+            </tr>
+            <tr>
+                <td>Design</td>
+                <td>Canvas | Pixlr | Microsoft Paint</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Các Ứng Dụng Mới Nhất</h2>
+    <div class="cards-grid">
+        <div class="project-card">
+            <div>
+                <p>Tháng 1, 19, 2025</p>
+                <h4>Brogram</h4>
+                <div class="tech-list">
+                    <div class="card-button-secondary">
+                        <p>ReactJS</p>
+                    </div>
+                    <div class="card-button-secondary">
+                        <p>FantaCSS</p>
+                    </div>
+                    <div class="card-button-secondary">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <p>Kế Hoạch Tập Gym Trong 30 Ngày
+                </p>
+                <div class="project-links">
+                    <a target="_blank" href="https://brogram-plan.netlify.app">Live</a>
+                    <a target="_blank" href="https://github.com/JLTC3111">GitHub</a>
+                </div>
+            </div>
+            <div class="img-div">
+                <img class="big-img"
+                    src="https://github.com/jamezmca/1_web_portfolio/blob/main/public/brogram.png?raw=true"
+                    alt="smoljames-thumbnail" />
+            </div>
+        </div>
+        <div class="project-card">
+            <div>
+                <p>Tháng 1, 24, 2024</p>
+                <h4>Cửa Hàng Bán Sticker</h4>
+                <div class="tech-list">
+                    <div class="card-button-secondary">
+                        <p>NextJS</p>
+                    </div>
+                    <div class="card-button-secondary">
+                        <p>FantaCSS</p>
+                    </div>
+                    <div class="card-button-secondary">
+                        <p>Stripe</p>
+                    </div>
+                </div>
+                <p>Một Siêu Cửa Hàng Cho Các Nhà Lập Trình Viên & Những Người Đam Mê Công Nghệ
+                </p>
+                <div class="project-links">
+                    <a target="_blank" href="https://main.d2a4evir1uyly1.amplifyapp.com/">Live</a>
+                    <a target="_blank" href="https://github.com/JLTC3111">GitHub</a>
+                </div>
+            </div>
+            <div class="img-div">
+                <img class="big-img"
+                    src="https://github.com/jamezmca/1_web_portfolio/blob/main/public/smolstore.png?raw=true"
+                    alt="smoljames-thumbnail" />
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div>
+                <p>Tháng 7, 15, 2023</p>
+                <h4>Expenny | Theo Dõi Các Subscriptions</h4>
+                <div class="tech-list">
+                    <div class="card-button-secondary">
+                        <p>NextJS</p>
+                    </div>
+                    <div class="card-button-secondary">
+                        <p>FantaCSS</p>
+                    </div>
+                    <div class="card-button-secondary">
+                        <p>Firebase</p>
+                    </div>
+                </div>
+                <p>Quản Lý & Theo Dõi Các Subscriptions của bạn!
+                </p>
+                <div class="project-links">
+                    <a target="_blank" href="https://sub-tracker.netlify.app/">Live</a>
+                    <a target="_blank" href="https://github.com/JLTC3111">GitHub</a>
+                </div>
+            </div>
+            <div class="img-div">
+                <img class="big-img"
+                    src="https://github.com/jamezmca/1_web_portfolio/blob/main/public/expenny.png?raw=true"
+                    alt="smoljames-thumbnail" />
+            </div>
+        </div>
+        <script>
+            // This is where we create the interactivity for our little color switching game
+            
+            // 1. select all the html elements so that we can later manipulate them
+            const body = document.querySelector('body')
+            const colorInput = document.getElementById('color-picker')
+            const colorDiv = document.querySelector('.color-div')
+            const hiddenText = document.querySelector('.color-div p')
+            const resetBtn = document.querySelector('.color-div button')
+            const playBtn = document.getElementById('play-game')
+            
+            // 2. create the functions 
+            
+            function playGame() {
+                // this function enables the play of the game by showing the color selector input
+                colorDiv.style.display = 'block'
+                playBtn.style.display = 'none'
+            }
+            
+            function changeColor() {
+                // take the users selected color on the input, and assign it to be the background color of the website
+                const selectedColor = colorInput.value
+                body.style.background = selectedColor
+                resetBtn.style.display = 'block'
+                hiddenText.style.display = 'block'
+                colorInput.style.display = 'none'
+            }
+            
+            function resetColor() {
+                body.style.background = 'white'
+                colorInput.style.display = 'block'
+                playBtn.style.display = 'block'
+            
+                hiddenText.style.display = 'none'
+                resetBtn.style.display = 'none'
+                colorDiv.style.display = 'none'
+            }
+            
+            // 3. is to assign the functions to the buttons by adding them function call to the actual elements (done above in the html code)
+            </script>
+            </section>
+                    </main>
+                    <footer>
+                        <p>By <a href="https://www.google.com" target="_blank"> LD.</a> ⭐️ the repo on <a target="_blank"
+                            href="">GitHub</a></p>
+                    </footer>
+                
+            
+            </body>
+            </html>
+    </div>
+</section>
+</main>
+
