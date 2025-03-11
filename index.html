@@ -893,8 +893,16 @@
         input {
             max-width: 600px;
         }
-
+    .icon-container {
+    position: absolute;
+    pointer-events: auto;
+    top: 150px;  /* Adjusts vertical position */
+    right: 120px; /* Adjusts horizontal position */
+    display: flex;
+    gap: 10px;  /* Space between icons */
+    z-index: 1000; /* Ensures icons stay on top of video */
     }
+}
 
 
 </style>
