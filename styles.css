@@ -223,9 +223,10 @@ transform: scale(1.8); /* Slight zoom effect */
 .language-switch {
     text-decoration: none; /* Remove underline */
     position: absolute;
-    top: 10px;
-    right: 120px;
+    top: 10.5%;
+    right: 10%;
     font-size: 28px;
+    color: inherit; 
     display: flex;
     gap: 8.5px;
     
@@ -281,4 +282,28 @@ font-family: 'Press Start 2P', cursive;
         transform: scale(1.2); /* Slight zoom-in effect */
         transition: transform 0.3s ease-in-out;
       }
+
+      .language-switch {
+        text-decoration: none; /* Remove underline */
+        position: absolute;
+        top: 10px;
+        right: 120px;
+        font-size: 28px;
+        color: inherit; 
+        display: flex;
+        gap: 8.5px;
+        
+    }
+    
+    flag-icon {
+        text-decoration: none;
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    
+    .flag-icon:hover {
+        transform: scale(1.6);
+        text-decoration: none; /* Remove underline */
+    }
+    
 }
