@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -36,17 +37,14 @@
         </a>
     </div>
 
-    <div class="language-switch">
-        <a href="https://dobaolongicueltd.netlify.app/" class="flag-icon" onclick="navigateTo('https://dobaolongicueltd.netlify.app/')">🇬🇧</a>
-        <a href="https://dobaolongicuevn.netlify.app/" class="flag-icon" onclick="navigateTo('https://dobaolongicuevn.netlify.app/')">🇻🇳</a>
-
-<script>
-  function navigateTo(url) {
-    window.location.href = url;
-  }
-</script>
+    <div class="language-switcher">
+        <a href="https://dobaolongicueltd.netlify.app/" class="flag-link">
+            <span class="flag-icon flag-icon-gb"></span>
+        </a>
+        <a href="https://dobaolongicuevn.netlify.app/" class="flag-link">
+            <span class="flag-icon flag-icon-vn"></span>
+        </a>
     </div>
-
     <main>
         <section>
             <div class="intro-container">
@@ -255,8 +253,10 @@
                         </div>
                     </div>
                     <div class="video-project">
-                        <video class="video-proj" autoplay muted loop playsinline >
-                            <source src="https://raw.githubusercontent.com/JLTC3111/1.web-portfolio-en/main/public/Expenny-App-en.mov" type="video/mp4">
+                        <video class="video-proj" autoplay muted loop playsinline>
+                            <source
+                                src="https://raw.githubusercontent.com/JLTC3111/1.web-portfolio-en/main/public/Expenny-App-en.mov"
+                                type="video/mp4">
                         </video>
                     </div>
                 </div>
