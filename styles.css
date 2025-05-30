@@ -267,27 +267,4 @@ color: #0077b5; /* LinkedIn blue */
         transform: scale(1.25); /* Slight zoom-in effect */
         transition: transform 0.3s ease-in-out;
       }
-
-    .language-switcher {
-        top: 120px; /* Adjust vertical positioning */
-        right: 120px; /* Adjust horizontal positioning */
-        gap: 8.5px; /* Adjust spacing between flags */
-        
-    }
-    
-    .flag-link {
-        font-size: 20px; /* Adjust flag size */
-        cursor: pointer;
-    }
-    
-    .flag-link:hover {
-        transform: scale(1.5);
-    }
-      
-    .icon-container{
-        margin-top: clamp(.5rem, .6rem, .75rem);
-        top: 135px;
-        right:120px;
-        gap: 8.5px;
-    }
 }
