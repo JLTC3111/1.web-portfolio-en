@@ -1,3 +1,4 @@
+
 body {
     min-height: 100vh;
     display: flex;
@@ -133,50 +134,48 @@ h1 {margin-top: -40px}
 }
 
 .memory-game-container h4 {
-text-align: center;
-display: block;
-margin: 0 auto;
-width: fit-content;
-}
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    }
 
 .memory-game-container button {
-display: block;
-margin: 20px auto; /* Centers horizontally */
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
-}
+    display: block;
+    margin: 20px auto; /* Centers horizontally */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    }
 
 .intro-container {
-display: flex;
-align-items: center; /* Aligns h1 and image vertically */
-position: relative
-}
-
-
+    display: flex;
+    align-items: center; /* Aligns h1 and image vertically */
+    position: relative
+    }
 
 .video-banner {
-position: absolute;
-pointer-events: none;
-top: 0;
-left: 50%;
-transform: translateX(-46%); /* Centers the banner */
-width: 100%; /* Adjust as needed */
-height: 230px; /* Adjust as needed */
-overflow: hidden;
-z-index: -1;
-}
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 50%;
+    transform: translateX(-46%); /* Centers the banner */
+    width: 100%; /* Adjust as needed */
+    height: 230px; /* Adjust as needed */
+    overflow: hidden;
+    z-index: -1;
+    }
 
 .video-bg {
-position: absolute;
-top: 40%;
-left: 40%;
-transform: translate(-50%, -50%);
-width: 100vw;  /* Ensures it fills the screen width */
-height: auto;   /* Keeps aspect ratio */
-min-height: 100%;
-object-fit: cover;
-}
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 100vw;  /* Ensures it fills the screen width */
+    height: auto;   /* Keeps aspect ratio */
+    min-height: 100%;
+    object-fit: cover;
+    }
 
 .video-project {
     position: relative;
@@ -196,58 +195,58 @@ object-fit: cover;
     object-fit: cover; /* Keeps it nicely filled */
   }
 
-
-.icon-container {
-position: absolute;
-pointer-events: auto;
-top: 150px;  /* Adjusts vertical position */
-right: 45px; /* Adjusts horizontal position */
-display: flex;
-gap: 8.5px;  /* Space between icons */
-z-index: 1000; /* Ensures icons stay on top of video */
+.group-container{
+    position: relative;
+    display: flex;
 }
-
-.icon-container a {
-font-size: 28px;  /* Adjust icon size */
-color: rgb(12, 11, 11); /* Change to preferred color */
-transition: transform 0.3s;
-}
-.icon-container a[href*="linkedin"] {
-color: #0077b5; /* LinkedIn blue */
-}
-
-.icon-container a:hover {
-transform: scale(1.8); /* Slight zoom effect */
-}   
-
 .language-switcher {
-    position: absolute; /* Ensure it moves relative to <body> */
+    position: absolute;
     top: 120px; /* Adjust vertical positioning */
     right: 45px; /* Adjust horizontal positioning */
-    display: flex;
-    gap: 9px; /* Adjust spacing between flags */
-    align-items: center;
+    transform-origin: center;
+    z-index: 11;
 }
 
 .flag-link {
-    font-size: 18px; /* Adjust flag size */
+    font-size: 20px; /* Adjust flag size */
     cursor: pointer;
     transition: transform 0.3s;
-    z-index: 1000; /* Ensure it stays on top of video */
 }
 
 .flag-link:hover {
     transform: scale(1.5);
 }
 
-
-h1 {
-font-family: 'Press Start 2P', cursive;
+.icon-container {
+    position: absolute;
+    pointer-events: auto;
+    top: 150px;  /* Adjusts vertical position */
+    right: 45px; /* Adjusts horizontal position */
+    gap: 8.5px;  /* Space between icons */
+    z-index: 10; /* Ensures icons stay on top of video */
 }
 
+.icon-container a {
+    font-size: 28px;  /* Adjust icon size */
+    color: rgb(12, 11, 11); /* Change to preferred color */
+    transition: transform 0.3s;
+}
+.icon-container a[href*="linkedin"] {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.icon-container a:hover {
+    transform: scale(1.8); /* Slight zoom effect */
+}   
 
 
-@media (min-width: 640px) {
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    }
+
+
+
+@media (max-width: 1366px) {
     .project-card {
         flex-direction: row;
     }
@@ -281,46 +280,25 @@ font-family: 'Press Start 2P', cursive;
       }
 
     .language-switcher {
-        position: absolute; /* Ensure it moves relative to <body> */
         top: 120px; /* Adjust vertical positioning */
         right: 120px; /* Adjust horizontal positioning */
-        display: flex;
         gap: 8.5px; /* Adjust spacing between flags */
-        align-items: center;
+        
     }
     
     .flag-link {
         font-size: 20px; /* Adjust flag size */
         cursor: pointer;
-        transition: transform 0.3s;
-        z-index: 1000; /* Ensure it stays on top of video */
     }
     
     .flag-link:hover {
         transform: scale(1.5);
     }
       
-    .icon-container {
-        position: absolute;
-        pointer-events: auto;
-        top: 150px;  /* Adjusts vertical position */
-        right: 45px; /* Adjusts horizontal position */
-        display: flex;
-        gap: 8.5px;  /* Space between icons */
-        z-index: 1000; /* Ensures icons stay on top of video */
-        }
-        
-        .icon-container a {
-        font-size: 28px;  /* Adjust icon size */
-        color: rgb(12, 11, 11); /* Change to preferred color */
-        transition: transform 0.3s;
-        }
-        .icon-container a[href*="linkedin"] {
-        color: #0077b5; /* LinkedIn blue */
-        }
-        
-        .icon-container a:hover {
-        transform: scale(1.8); /* Slight zoom effect */
-        }   
-        
+    .icon-container{
+        margin-top: clamp(.5rem, .6rem, .75rem);
+        top: 135px;
+        right:120px;
+        gap: 8.5px;
+    }
 }
