@@ -182,10 +182,8 @@ h1 {margin-top: -190px}
 .video-project {
     position: relative;
     width: 50vw; /* Adjust width as needed */
-    max-width: 500px; /* Prevent it from being too large */
+    max-width: 400px; /* Prevent it from being too large */
     aspect-ratio: 4 / 3; /* Maintain video ratio */
-
-    
     border-radius: 10px; /* Optional: rounded corners */
     overflow: hidden; /* Ensures no weird overflow */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
