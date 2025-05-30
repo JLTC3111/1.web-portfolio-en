@@ -64,7 +64,9 @@ p {padding-top: 1.5rem;
     margin-bottom: -8px;
     }
 
-h1 {margin-top: -40px}
+h1 {font-family: 'Press Start 2P', cursive; }
+
+h1 {margin-top: -190px}
 
 .intro-description {
     max-width: 700px;
@@ -164,7 +166,7 @@ h1 {margin-top: -40px}
     height: 230px; /* Adjust as needed */
     overflow: hidden;
     z-index: -1;
-    }
+}
 
 .video-bg {
     position: absolute;
@@ -175,7 +177,7 @@ h1 {margin-top: -40px}
     height: auto;   /* Keeps aspect ratio */
     min-height: 100%;
     object-fit: cover;
-    }
+}
 
 .video-project {
     position: relative;
@@ -195,56 +197,43 @@ h1 {margin-top: -40px}
     object-fit: cover; /* Keeps it nicely filled */
   }
 
-.group-container{
-    position: relative;
-    display: flex;
-}
-.language-switcher {
-    position: absolute;
-    top: 120px; /* Adjust vertical positioning */
-    right: 45px; /* Adjust horizontal positioning */
-    transform-origin: center;
-    z-index: 11;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+  max-width: 80px;
+  margin: 10.5vh 10vw 0 auto;
+  margin-left: auto;
+  padding: 20px;
 }
 
-.flag-link {
-    font-size: 20px; /* Adjust flag size */
-    cursor: pointer;
-    transition: transform 0.3s;
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  background: #f3f3f3;
+  font-size: 28px;
+ 
 }
 
-.flag-link:hover {
+.box a {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s;
+} 
+
+.box:hover a {
     transform: scale(1.5);
 }
 
-.icon-container {
-    position: absolute;
-    pointer-events: auto;
-    top: 150px;  /* Adjusts vertical position */
-    right: 45px; /* Adjusts horizontal position */
-    gap: 8.5px;  /* Space between icons */
-    z-index: 10; /* Ensures icons stay on top of video */
+.box a[href*="linkedin"] {
+color: #0077b5; /* LinkedIn blue */
 }
 
-.icon-container a {
-    font-size: 28px;  /* Adjust icon size */
-    color: rgb(12, 11, 11); /* Change to preferred color */
-    transition: transform 0.3s;
+.flag-icon {
+    font-size: 20px;
 }
-.icon-container a[href*="linkedin"] {
-    color: #0077b5; /* LinkedIn blue */
-}
-
-.icon-container a:hover {
-    transform: scale(1.8); /* Slight zoom effect */
-}   
-
-
-h1 {
-    font-family: 'Press Start 2P', cursive;
-    }
-
-
 
 @media (max-width: 1366px) {
     .project-card {
