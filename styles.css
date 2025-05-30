@@ -231,8 +231,18 @@ h1 {margin-top: -190px}
 color: #0077b5; /* LinkedIn blue */
 }
 
+
+.flag-link {
+  display: inline-block;
+  padding: 10px; /* Adjust if needed */
+  cursor: pointer;
+  z-index: 1;
+}
+
 .flag-icon {
-    font-size: 20px;
+  font-size: 20px;
+  display: inline-block;
+  pointer-events: none; /* Prevent the span from hijacking clicks */
 }
 
 @media (max-width: 1366px) {
