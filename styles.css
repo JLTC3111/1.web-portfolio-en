@@ -57,6 +57,61 @@ section {
     gap: 1rem;
 }
 
+.contact-sidebar {
+    position: fixed; /* Stays in place as the user scrolls */
+    right: 1.75%; /* Adjust as needed for desired distance from the right edge */
+    top: 65%; /* Center vertically */
+    transform: translateY(-70%); /* Adjust for perfect vertical centering */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 12.5px; /* Space between icons */
+    z-index: 14; /* Ensure it stays on top of other content */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 0;
+    width: fit-content;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 4.5s ease-in-out;
+}
+
+.contact-sidebar .contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50px;
+    height:50px;
+    background-color: transparent; /* Or the specific color from the image */
+}
+
+.contact-sidebar .contact-item svg {
+    width: 45%; /* Adjust icon size within the circle */
+    height: 45%; /* Adjust icon size within the circle */
+}
+
+.contact-sidebar .music-bars {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.contact-sidebar .music-bars svg {
+  transform: rotate(90deg);
+}
+
+/* Hover effects for a better user experience */
+.contact-item:hover {
+    transform: scale(1.25); /* Slightly enlarge on hover */
+    transition: all 0.5s ease-in-out; /* Smooth transition */
+}
+
+.icon-bar {
+  width: 15px;            /* Or any thickness you want */
+  height: 1px;          /* Set a visible height */
+  background-color:rgba(0, 0, 0, 0.25);
+  margin: -7.5px auto;     /* Space around the bar */
+  border-left: .5px dotted black; /* Creates a vertical dotted line */
+  border-right: .5px dotted black;
+}
+
 .intro-header 
 p {padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -64,7 +119,7 @@ p {padding-top: 1.5rem;
     margin-bottom: -8px;
     }
 
-h1 {
+.intro-header h1 {
     margin-top: -190px;
     font-family: 'Press Start 2P', cursive;
 }
@@ -100,6 +155,18 @@ h1 {
     margin-bottom: 20px !important;
 }
 
+.color-div.hidden {
+    display: none;
+}
+
+.color-div .hidden-text {
+    display: none;
+}
+
+.color-div .reset-btn {
+    display: none;
+}
+
 .cards-grid {
     display: flex;
     flex-direction: column;
@@ -108,13 +175,36 @@ h1 {
 
 .project-card {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* fallback for small screens */
+  }
 
-.project-card>div:first-of-type {
-    flex: 1;
-}
+  .project-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  }
+  
+  .project-card > div:first-child {
+    flex: 1 1 300px;
+  }
+  
+  .video-project {
+    flex: 1 1 100px;
+    max-width: 180px;
+  }
+  
+  .video-proj {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+
 
 .project-links {
     display: flex;
@@ -155,6 +245,38 @@ h1 {
     cursor: pointer;
     }
 
+.memory-game {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 1s;
+}
+
+.flipped {
+    background: white;
+    transform: rotateY(180deg);
+}
+
 .intro-container {
     display: flex;
     align-items: center; /* Aligns h1 and image vertically */
@@ -183,22 +305,6 @@ h1 {
     min-height: 100%;
     object-fit: cover;
 }
-
-.video-project {
-    position: relative;
-    width: 50vw; /* Adjust width as needed */
-    max-width: 400px; /* Prevent it from being too large */
-    aspect-ratio: 4 / 3; /* Maintain video ratio */
-    border-radius: 10px; /* Optional: rounded corners */
-    overflow: hidden; /* Ensures no weird overflow */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
-  }
-  
-  .video-project video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Keeps it nicely filled */
-  }
 
 .grid-container {
   display: grid;
@@ -256,6 +362,12 @@ color: #0077b5; /* LinkedIn blue */
         max-width: 35%;
     }
 
+    .project-card:hover {
+        transform: scale(1.015);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+      }
+
     .video-project {
         position: relative;
         width: 50vw; /* Adjust width as needed */
@@ -278,5 +390,19 @@ color: #0077b5; /* LinkedIn blue */
       .video-project:hover {
         transform: scale(1.25); /* Slight zoom-in effect */
         transition: transform 0.3s ease-in-out;
+      }
+      .contact-sidebar {
+        top:65%;
+        right:1%;
+      }
+    
+      .contact-sidebar .contact-item {
+        width:38px;
+        height:38px;
+      }
+    
+      .contact-sidebar .contact-item svg{
+        width:55%;
+        height:55%;
       }
 }
