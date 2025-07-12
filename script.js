@@ -261,7 +261,7 @@ window.addEventListener('DOMContentLoaded', () => {
             const now = new Date();
             const month = now.toLocaleString('en-US', { month: 'long' });
             const day = now.getDate();
-            calendarTooltip.textContent = `${month} ${day}`;
+            calendarTooltip.textContent = `${month} ${day} 🗓️`;
         });
         calendarLink.addEventListener('mouseleave', function() {
             calendarTooltip.textContent = 'Calendar';
