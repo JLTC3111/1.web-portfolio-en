@@ -246,6 +246,51 @@ window.updateCalendarSvgTime = () => {
 
 // Initialize everything when DOM is loaded
 window.addEventListener('DOMContentLoaded', () => {
+    // Calendar modal logic
+    const calendarIcon = document.querySelector('.calendar-icon svg');
+    const calendarLink = document.querySelector('.calendar-icon');
+    const calendarModal = document.getElementById('calendar-modal');
+    const calendarModalContent = document.getElementById('calendar-modal-content');
+    const calendarModalSvg = document.getElementById('calendar-modal-svg');
+    const calendarModalClose = document.getElementById('calendar-modal-close');
+
+    // Tooltip update for calendar icon
+    const calendarTooltip = calendarLink.querySelector('.tooltiptext');
+    if (calendarTooltip) {
+        calendarLink.addEventListener('mouseenter', function() {
+            const now = new Date();
+            const month = now.toLocaleString('en-US', { month: 'long' });
+            const day = now.getDate();
+            calendarTooltip.textContent = `${month} ${day}`;
+        });
+        calendarLink.addEventListener('mouseleave', function() {
+            calendarTooltip.textContent = 'Calendar';
+        });
+    }
+    if (calendarIcon && calendarLink && calendarModal && calendarModalSvg && calendarModalClose) {
+        calendarLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Clone the calendar SVG
+            const clone = calendarIcon.cloneNode(true);
+            // Clear previous
+            calendarModalSvg.innerHTML = '';
+            calendarModalSvg.appendChild(clone);
+            // Style the SVG
+            clone.style.width = '340px';
+            clone.style.height = '340px';
+            clone.style.display = 'block';
+            calendarModal.style.display = 'flex';
+        });
+        calendarModalClose.addEventListener('click', function() {
+            calendarModal.style.display = 'none';
+        });
+        // Close modal when clicking outside modal content
+        calendarModal.addEventListener('click', function(e) {
+            if (e.target === calendarModal) {
+                calendarModal.style.display = 'none';
+            }
+        });
+    }
     // Initialize memory game
     createMemoryGame();
     
