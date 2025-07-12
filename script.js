@@ -302,6 +302,7 @@ window.addEventListener('DOMContentLoaded', () => {
     
     // Initialize calendar and start updates
     updateCalendarSvgTime();
+    
     // Update calendar every minute
     setInterval(updateCalendarSvgTime, 60000);
     
