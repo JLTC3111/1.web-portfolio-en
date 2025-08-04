@@ -384,6 +384,20 @@ color: #0077b5; /* LinkedIn blue */
   pointer-events: none; /* Prevent the span from hijacking clicks */
 }
 
+/* Initial (hidden) state */
+.project-card {
+  filter: blur(8px);
+  opacity: 0;
+  transition: all 0.75s ease-in-out;
+}
+
+/* When AOS activates */
+.project-card.aos-animate {
+  filter: blur(0);
+  opacity: 1;
+  transition: all 0.75s ease-in-out;
+}
+
 @media (max-width: 1366px) {
     
     .project-card {
