@@ -311,7 +311,7 @@ p {padding-top: 1.5rem;
 
 .intro-container {
     display: flex;
-    align-items: center; /* Aligns h1 and image vertically */
+    align-items: center; 
     position: relative
     }
 
@@ -320,9 +320,10 @@ p {padding-top: 1.5rem;
     pointer-events: none;
     top: 0;
     left: 50%;
-    transform: translateX(-46%); /* Centers the banner */
-    width: 100%; /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
+    transform: translateX(-46%); 
+    width: 100%; 
+    height: 100%; 
+    max-height: 250px;
     overflow: hidden;
     z-index: -1;
 }
@@ -332,15 +333,15 @@ p {padding-top: 1.5rem;
     top: 40%;
     left: 40%;
     transform: translate(-50%, -50%);
-    width: 100vw;  /* Ensures it fills the screen width */
-    height: auto;   /* Keeps aspect ratio */
+    width: 100vw;  
+    height: auto;   
     min-height: 100%;
     object-fit: cover;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 20px;
   max-width: 80px;
   margin: 10.5vh 10vw 0 auto;
@@ -369,19 +370,19 @@ p {padding-top: 1.5rem;
 }
 
 .box a[href*="linkedin"] {
-color: #0077b5; /* LinkedIn blue */
+color: #0077b5;
 }
 
 .flag-link {
   display: inline-block;
-  padding: 10px; /* Adjust if needed */
+  padding: 10px; 
   cursor: pointer;
 }
 
 .flag-icon {
   font-size: 20px;
   display: inline-block;
-  pointer-events: none; /* Prevent the span from hijacking clicks */
+  pointer-events: none; 
 }
 
 /* Initial (hidden) state */
@@ -398,8 +399,18 @@ color: #0077b5; /* LinkedIn blue */
   transition: all 0.75s ease-in-out;
 }
 
-@media (max-width: 1366px) {
-    
+@media (max-width: 768px) {
+    table td,
+    table th {
+      font-size: clamp(0.75rem, 4vw, 0.95rem);
+    }
+    .table-wrapper {
+      overflow-x: auto;
+      max-width: 100%;
+    }
+    .video-banner {
+      max-height: 250px;
+    }
     .project-card {
         flex-direction: row;
     }
