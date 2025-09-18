@@ -57,6 +57,11 @@ section {
     gap: 1rem;
 }
 
+h5 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(0.75rem, 4vw, 1.25rem);
+}
+
 .contact-sidebar {
     position: fixed; 
     right: 1.75%;
@@ -161,10 +166,9 @@ p {padding-top: 1.5rem;
 }
 
 .intro-description {
-    max-width: 700px;
-    padding-top: 2.5rem;
-    padding-bottom: 1.5rem;
-    margin-top: 25px;
+    width: 100%;
+    max-width: 1200px !important;
+    margin-top: 4.5rem;
 }
 
 .links-container {
@@ -406,6 +410,12 @@ color: #0077b5;
     table th {
       font-size: clamp(0.75rem, 4vw, 0.95rem);
     }
+
+    .intro-description {
+        margin-top: 2.75rem;
+      }
+    }
+    
     .table-wrapper {
       overflow-x: auto;
       max-width: 100%;
