@@ -241,7 +241,6 @@ p {padding-top: 1.5rem;
     border-radius: 12px;
   }
 
-
 .project-links {
     display: flex;
     align-items: center;
@@ -343,6 +342,22 @@ p {padding-top: 1.5rem;
     object-fit: cover;
 }
 
+.video-project {
+  position: relative;
+  width: 50vw; 
+  max-width: 300px; 
+  aspect-ratio: 4 / 4; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+  }
+    
+.video-project video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
@@ -437,21 +452,21 @@ color: #0077b5;
 
     .video-project {
         position: relative;
-        width: 50vw; /* Adjust width as needed */
-        max-width: 250px; /* Prevent it from being too large */
-        aspect-ratio: 4 / 3; /* Maintain video ratio */
-        float: right; /* Push it to the right side */
-        margin-left: 20px; /* Add spacing from other content */
+        width: 50vw; 
+        max-width: 250px; 
+        aspect-ratio: 4 / 3; 
+        float: right; 
+        margin-left: 20px;
         margin-bottom: 20px;
-        border-radius: 10px; /* Optional: rounded corners */
-        overflow: hidden; /* Ensures no weird overflow */
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+        border-radius: 10px; 
+        overflow: hidden;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
       }
       
       .video-project video {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Keeps it nicely filled */
+        object-fit: cover; 
       }
       
       .video-project:hover {
