@@ -168,7 +168,7 @@ p {padding-top: 1.5rem;
 .intro-description {
     width: 100%;
     max-width: 1200px !important;
-    margin-top: 4.5rem;
+    margin-top: 15%;
 }
 
 .links-container {
@@ -413,7 +413,6 @@ color: #0077b5;
     .intro-description {
         margin-top: 2.75rem;
       }
-    }
     
     .table-wrapper {
       overflow-x: auto;
