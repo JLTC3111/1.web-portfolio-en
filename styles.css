@@ -83,10 +83,6 @@ h5 {
     pointer-events: auto;
     cursor: pointer;
   }
-  
-  .contact-sidebar .music-bars svg {
-    transform: rotate(90deg);
-  }
 
 .contact-sidebar .contact-item {
     display: flex;
@@ -95,38 +91,40 @@ h5 {
     width:50px;
     height:50px;
     background-color: transparent; 
+    will-change: auto;
 }
 
 .contact-sidebar .contact-item svg {
     width: 45%; 
     height: 45%; 
+    will-change: auto;
 }
 
 .contact-item:hover svg {
-  transform: rotate(-360deg) scale(1.25);
-  transition: transform 0.3s ease-in-out;
+    transform: rotate(-360deg) scale(1.25);
+    transition: transform 0.3s ease-in-out;
 }
 
 .contact-sidebar .music-bars:hover svg {
-  transform: rotate(-90deg);
-  transition: transform 0.3s ease-in-out;
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease-in-out;
 }
 
 .icon-bar {
-  width: 15px;            
-  height: 1px;        
-  background-color:rgba(0, 0, 0, 0.25);
-  margin: -7.5px auto;     
-  border-left: .5px dotted black; 
-  border-right: .5px dotted black;
+    width: 15px;            
+    height: 1px;        
+    background-color:rgba(0, 0, 0, 0.25);
+    margin: -7.5px auto;     
+    border-left: .5px dotted black; 
+    border-right: .5px dotted black;
 }
 
 .tooltip {
     position: relative;
     display: inline-block;
-  }
+}
   
-  .tooltip .tooltiptext {
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 100px;
     background-color: transparent;
